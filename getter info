@@ -4,3 +4,10 @@ get makes total a getter.
 A getter looks like a field when you use it,
 but it actually runs code every time it is read.
 You write state.total, with no parentheses, exactly as if it were a stored value.
+
+
+
+The reason to calculate the total instead of storing it is that a stored total 
+could get out of sync with the list 
+(for example, if you remove an expense but forget to update the total).
+A getter is always recalculated from the list, so it is always correct.
