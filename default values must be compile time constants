@@ -1,0 +1,6 @@
+  const ExpenseState({this.expenses = const []});
+  this.expenses = const [] is the default value.
+  If nobody passes a list, expenses becomes an empty list. 
+  Default values in Dart must be compile-time constants, 
+  which is why it says const [] and not just []. 
+  A const list is  unmodifiable: if you call .add() on it, the app throws an error at runtime.
