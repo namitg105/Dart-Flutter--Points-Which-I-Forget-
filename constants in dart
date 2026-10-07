@@ -1,0 +1,7 @@
+const ExpenseState({this.expenses = const []});
+
+const before the constructor name allows 
+Dart to create this object at compile time when all its values are already known. 
+
+For this to be allowed, every field in the class must be final, which ours is.
+The benefit is that const ExpenseState() is created once and reused, rather than built again every time.
