@@ -1,0 +1,6 @@
+double get total => expenses.fold(0, (sum, e) => sum + e.amount);
+The getter part: double get total =>
+get makes total a getter. 
+A getter looks like a field when you use it,
+but it actually runs code every time it is read.
+You write state.total, with no parentheses, exactly as if it were a stored value.
